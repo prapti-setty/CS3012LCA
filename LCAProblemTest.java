@@ -28,7 +28,10 @@ public class LCAProblemTest
 	@Test
 	public void testFalse() 
 	{
-		
+		treeOne();
+		assertEquals("", LCAProblem.computeLCA(8, 8, tree), -1);
+		assertEquals("", LCAProblem.computeLCA(1, 8, tree), -1);
+		assertEquals("", LCAProblem.computeLCA(8, 2, tree), -1);
 	}
 
 }
